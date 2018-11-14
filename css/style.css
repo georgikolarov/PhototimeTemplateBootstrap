@@ -1,0 +1,57 @@
+body{
+    font-family: "Myriad Pro", sans-serif;
+    color: #fff;
+}
+header{
+    background: url("../img/backgroundheader.jpg");
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header .navbar a{
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+header .navbar a:hover{
+    color: #16a085 !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 3.5rem !important;
+    padding-left: 3.5rem !important;
+    padding: 2.5rem 1rem;
+}
+
+@media (max-width: 1200px) {
+
+    header{
+        background: url("../img/backgroundheader.jpg");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
+        padding: .5rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
+    }
+}
