@@ -58,8 +58,8 @@ header .navbar a:hover{
     position: absolute;
     z-index: 999;
     left: 50%;
-    top: 90%;
-    transform: translate(-50%, -90%);
+    top: 95%;
+    transform: translate(-50%, -95%);
 }
 .content-icons a {
     font-size: 18pt;
@@ -93,7 +93,16 @@ header .navbar a:hover{
     width: 500px;
     letter-spacing: 1.5px;
     line-height: 2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+.feature1 .content div:nth-child(2) img{
+    width: 90%;
+}
+.feature1 .context-text, .feature2 .context-text{
+    top: 70px !important;
+}
+.feature1 .content img, .feature2 .content img{
+    margin-top: 70px !important;
 }
 .feature2 .content p{
     width: 450px;
@@ -101,12 +110,33 @@ header .navbar a:hover{
     line-height: 2;
     margin-bottom: 30px;
 }
-.feature1 .context-text, .feature2 .context-text{
-    top: 80px !important;
+.slider ul{
+    list-style: none
 }
-.feature1 .content img, .feature2 .content img{
-    margin-top: 80px !important;
+.slick-prev, .slick-next {
+    position: absolute;
+    top: -10% !important;
+    transform: translate(-10, 0%);
 }
+.slick-prev:before, .slick-next:before {
+    color: #000 !important;
+}
+.slick-dots li button:before {
+    content: "\f138" !important;
+}
+[data-slick-index="-2"],[data-slick-index="-1"], [data-slick-index="0"],[data-slick-index="1"], [data-slick-index="2"]{
+   margin-right: 20px !important;
+}
+.slick-prev {
+    left: 80% !important;
+    transform: translate(0, -80%);
+}
+.slick-next {
+    left: 90%;
+    transform: translate(0, -90%);
+}
+
+
 
 @media (max-width: 992px) {
     .navbar-expand-md .navbar-nav .nav-link {
@@ -116,6 +146,12 @@ header .navbar a:hover{
 
     .feature1 .context-text {
         top: 40px !important;
+    }
+    .feature1 .content{
+        text-align: center;
+    }
+    .feature1 .content p{
+        width: 100%;
     }
     .feature2 .content{
         text-align: center;
@@ -130,23 +166,25 @@ header .navbar a:hover{
         padding-left: 0rem !important;
         padding: .5rem 1rem;
     }
-    .logotop{
-        display: block;
-        position: absolute;
-        z-index: 999;
-        left: 90%;
-        top: 10%;
-        transform: translate(-90%, -10%);
-    }
     .feature1 .content p{
         width: 90%;
     }
+    .logo {
+        position: absolute;
+        left: 90%;
+        top: 2%;
+        transform: translate(-90%, -2%);
+    }
+
     .feature1 .content img, .feature2 .content img{
         width: 90%;
     }
-
-
+    .navbar-toggler {
+        margin-top: 2% !important;
+    }
 }
+
+
 @media (max-width: 576px) {
 
     .navbar-expand-md .navbar-nav .nav-link {
