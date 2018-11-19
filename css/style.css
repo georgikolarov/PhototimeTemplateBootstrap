@@ -1,6 +1,5 @@
 body{
     font-family: "Myriad Pro", sans-serif;
-    color: #fff;
 }
 header{
     background: url("../img/background-header.jpg");
@@ -14,7 +13,7 @@ header{
     margin: 0 auto;
 }
 header .navbar a{
-    color: #fff !important;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -69,19 +68,22 @@ header .navbar a:hover{
 .content-icons a:hover{
     color: #16a085;
 }
-
 .navbar{
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 4.5rem !important;
-    padding-left: 4.5rem !important;
+    padding-right: 3.5rem !important;
+    padding-left: 3.5rem !important;
     padding: 2.5rem 1rem;
 }
 
-.feature1{
+.ff{
+    margin-left: 30px !important;
+}
+
+.feature1, .slider, .feature4{
     background-color: #f5f6f7;
 }
 .feature1 .content h3, .feature2 .content h3{
@@ -99,7 +101,7 @@ header .navbar a:hover{
     width: 90%;
 }
 .feature1 .context-text, .feature2 .context-text{
-    top: 70px !important;
+    top: 55px !important;
 }
 .feature1 .content img, .feature2 .content img{
     margin-top: 70px !important;
@@ -109,6 +111,16 @@ header .navbar a:hover{
     letter-spacing: 1.5px;
     line-height: 2;
     margin-bottom: 30px;
+}
+.feature2{
+    margin-bottom: 80px;
+}
+.logogreen{
+    margin-bottom: 20px;
+}
+.slider{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .slider ul{
     list-style: none
@@ -121,29 +133,61 @@ header .navbar a:hover{
 .slick-prev:before, .slick-next:before {
     color: #000 !important;
 }
-.slick-dots li button:before {
-    content: "\f138" !important;
-}
-[data-slick-index="-2"],[data-slick-index="-1"], [data-slick-index="0"],[data-slick-index="1"], [data-slick-index="2"]{
-   margin-right: 20px !important;
+[data-slick-index]{
+   margin-right: 10px !important;
 }
 .slick-prev {
     left: 80% !important;
     transform: translate(0, -80%);
 }
 .slick-next {
-    left: 90%;
-    transform: translate(0, -90%);
+    left: 85%;
+    transform: translate(0, -85%);
+}
+.slick-list{
+ margin-left: 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-prev:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f053' !important;
+}
+.slick-next:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f054' !important;
 }
 
-
+.feature3{
+    position: relative;
+    background-image: url("../img/section3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 790px;
+}
+.input-group{
+    width: 60%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input-group-text {
+    background-color: #16a085 !important;
+    border: 1px solid #16a085;
+    color: #fff;
+}
 
 @media (max-width: 992px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 2.5rem !important;
         padding-left: 2.5rem !important;
     }
-
     .feature1 .context-text {
         top: 40px !important;
     }
@@ -159,6 +203,12 @@ header .navbar a:hover{
     .feature2 .content p{
         width: 100%;
     }
+    .slider{
+        padding-top: 80px;
+    }
+    .content>div{
+        padding-bottom: 40px;
+    }
 }
 @media (max-width: 768px) {
     .navbar-expand-md .navbar-nav .nav-link {
@@ -166,30 +216,29 @@ header .navbar a:hover{
         padding-left: 0rem !important;
         padding: .5rem 1rem;
     }
-    .feature1 .content p{
-        width: 90%;
-    }
     .logo {
         position: absolute;
         left: 90%;
         top: 2%;
         transform: translate(-90%, -2%);
     }
-
     .feature1 .content img, .feature2 .content img{
         width: 90%;
     }
     .navbar-toggler {
-        margin-top: 2% !important;
+        margin-top: 3% !important;
     }
 }
-
 
 @media (max-width: 576px) {
 
     .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: 0rem !important;
-        padding-left: 0rem !important;
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+
+    .navbar-toggler {
+        margin-top: 6% !important;
     }
 
 
