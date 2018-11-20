@@ -134,7 +134,7 @@ header .navbar a:hover{
     color: #000 !important;
 }
 [data-slick-index]{
-   margin-right: 10px !important;
+   margin-right: 15px !important;
 }
 .slick-prev {
     left: 80% !important;
@@ -142,7 +142,7 @@ header .navbar a:hover{
 }
 .slick-next {
     left: 85%;
-    transform: translate(0, -85%);
+    transform: translate(0, -80%);
 }
 .slick-list{
  margin-left: 20px;
@@ -170,19 +170,47 @@ header .navbar a:hover{
     background-attachment: fixed;
     height: 790px;
 }
-.input-group{
+.feature3 .input-group{
     width: 60%;
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.input-group-text {
+.feature3 .input-group-text {
     background-color: #16a085 !important;
     border: 1px solid #16a085;
     color: #fff;
 }
-
+.btn-group .btn:first-child{
+    background-color: #1abc9c;
+    width: 250px;
+}
+.btn-group .btn:last-child{
+    width: 40px;
+}
+.footer .contentfooter ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.footer .contentfooter ul li a{
+    text-decoration: none;
+    color: #000;
+    padding-right: 10px;
+}
+.footer .contentfooter ul li a:hover{
+    text-decoration: none;
+    color: #1abc9c;
+}
+.footer .contentfooter ul li:nth-child(1):after, .footer .contentfooter ul li:nth-child(2):after{
+    content: '';
+    width: 0;
+    height: 3px;
+    border: 1px solid #16a085;
+    top: 0;
+    left: 10px;
+    margin-right: 10px;
+}
 @media (max-width: 992px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 2.5rem !important;
@@ -203,12 +231,16 @@ header .navbar a:hover{
     .feature2 .content p{
         width: 100%;
     }
-    .slider{
-        padding-top: 80px;
-    }
     .content>div{
         padding-bottom: 40px;
     }
+    .slider{
+        padding-top: 100px;
+    }
+    .contentbtn>div{
+        padding-bottom: 1rem;
+    }
+
 }
 @media (max-width: 768px) {
     .navbar-expand-md .navbar-nav .nav-link {
@@ -228,6 +260,7 @@ header .navbar a:hover{
     .navbar-toggler {
         margin-top: 3% !important;
     }
+
 }
 
 @media (max-width: 576px) {
@@ -240,6 +273,9 @@ header .navbar a:hover{
     .navbar-toggler {
         margin-top: 6% !important;
     }
-
+    .content ul{
+        padding-left: 10px;
+    }
 
 }
+
